@@ -1,0 +1,19 @@
+{
+  "name": "ssh-bruteforce-global-fast",
+  "time_field": "@timestamp",
+  "indices": ["logs-*"],
+  "filter_query": {
+    "bool": { "filter": [
+      { "term": { "event.category": "authentication" } },
+      { "term": { "event.outcome": "failure" } }
+    ]}
+  },
+  "feature_attributes": [{
+    "feature_name": "failed_count",
+    "feature_enabled": true,
+    "aggregation_query": { "failed_count": { "value_count": { "field": "event.outcome" } } }
+  }],
+  "detection_interval": { "period": { "interval": 1, "unit": "MINUTES" } },
+  "window_delay":       { "period": { "interval": 1, "unit": "MINUTES" } },
+  "shingle_size": 1
+}
