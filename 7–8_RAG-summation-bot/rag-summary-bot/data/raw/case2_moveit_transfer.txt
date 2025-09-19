@@ -1,0 +1,5 @@
+MOVEit Transfer SQL Injection (2023, Progress Software)
+Attackers exploited a SQL injection in MOVEit Transfer leading to data exfiltration.
+The Cl0p group mass-exploited vulnerable instances shortly after public reports.
+Mitigations included immediate patching, disabling HTTP access temporarily,
+credential resets, and forensic review. Multiple CVEs were assigned in 2023.

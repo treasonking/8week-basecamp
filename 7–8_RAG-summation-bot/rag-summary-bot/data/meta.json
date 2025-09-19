@@ -1,0 +1,16 @@
+{
+  "docs": {
+    "case1_xz_backdoor.txt": {
+      "source": ".\\data\\raw\\case1_xz_backdoor.txt",
+      "chunks": 1
+    },
+    "case2_moveit_transfer.txt": {
+      "source": ".\\data\\raw\\case2_moveit_transfer.txt",
+      "chunks": 1
+    },
+    "case3_log4shell.txt": {
+      "source": ".\\data\\raw\\case3_log4shell.txt",
+      "chunks": 1
+    }
+  }
+}

@@ -1,0 +1,5 @@
+Log4Shell (CVE-2021-44228) in Apache Log4j 2
+A critical RCE via JNDI lookups in log messages allowed attackers to execute code
+when specially crafted input was logged. Affected versions: 2.0-beta9 to 2.14.1.
+Mitigation included updating to 2.16.0+ (later 2.17.x), removing JndiLookup from
+the classpath, and restricting outbound LDAP/RMI. Widespread exploitation observed.

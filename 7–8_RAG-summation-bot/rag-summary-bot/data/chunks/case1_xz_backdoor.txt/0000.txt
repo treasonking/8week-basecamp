@@ -1,0 +1,7 @@
+CVE-2024-3094: xz Utils Backdoor Incident (2024)
+Summary: A malicious backdoor was inserted into xz Utils releases 5.6.0 and 5.6.1,
+impacting certain Linux distributions. The payload modified liblzma to weaken sshd
+authentication on systems using systemd and the patched liblzma, enabling potential
+remote unauthorized access. Distributions quickly reverted to 5.4.x.
+Mitigation: downgrade xz to 5.4.x, verify package signatures, audit sshd, and
+monitor for suspicious CPU usage during sshd start. Vendors issued advisories.
