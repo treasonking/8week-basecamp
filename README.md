@@ -46,7 +46,7 @@
 
 ---
 
-## 사용 기술(예시)
+## 사용 기술
 
 - **OS/도구**: Linux, PowerShell, Bash, Docker 등  
 - **로그/탐지**: OpenSearch/ELK(또는 동등 스택), 간단 이상탐지 쿼리  
